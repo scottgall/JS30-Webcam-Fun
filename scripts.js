@@ -28,8 +28,8 @@ function paintToCanvas() {
     let pixels = ctx.getImageData(0, 0, width, height);
     // manipulate pixels
     // pixels = redEffect(pixels);
-    // pixels = rgbSplit(pixels);
-    pixels = greenScreen(pixels);
+    pixels = rgbSplit(pixels);
+    // pixels = greenScreen(pixels);
     // ctx.globalAlpha = 0.1;
     // put pixels back
     ctx.putImageData(pixels, 0, 0)
